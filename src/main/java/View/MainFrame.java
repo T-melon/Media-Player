@@ -1,7 +1,7 @@
 package View;
 
 import Controller.MusicController;
-import Value.PlayerImg;
+import value.PlayerImg;
 import View.Aside.Aside;
 import View.Bottom.BottomMenu;
 

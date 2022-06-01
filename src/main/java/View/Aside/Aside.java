@@ -1,7 +1,7 @@
 package View.Aside;
 
-import UI.ScrollBarUI;
-import Value.MediaType;
+import ui.ScrollBarUi;
+import value.MediaType;
 
 import javax.swing.*;
 
@@ -19,7 +19,7 @@ public class Aside extends JPanel {
         asideList = new AsideList(MediaType.MusicType);
         scrollPane = new JScrollPane();
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPane.getVerticalScrollBar().setUI(new ScrollBarUI());
+        scrollPane.getVerticalScrollBar().setUI(new ScrollBarUi());
         scrollPane.setBounds(0, 100, 300, 600);
         scrollPane.setViewportView(asideList);
         scrollPane.setBorder(null);

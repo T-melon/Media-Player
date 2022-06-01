@@ -1,13 +1,13 @@
 package View.Aside;
 
-import Components.PlayerTextButton;
+import component.PlayerTextButton;
 import Controller.MusicController;
-import Util.ClickEvent;
-import Util.FileList;
-import Value.MediaDirectory;
-import Value.MediaType;
-import Value.PlayerColor;
-import Value.PlayerFont;
+import util.ClickEvent;
+import util.FileList;
+import value.MediaDirectory;
+import value.MediaType;
+import value.PlayerColor;
+import value.PlayerFont;
 import View.Bottom.BottomMenuRight;
 import View.MainFrame;
 import View.VideoFrame;

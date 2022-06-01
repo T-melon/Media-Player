@@ -1,6 +1,6 @@
 package View.Bottom;
 
-import Value.PlayerColor;
+import value.PlayerColor;
 
 import javax.swing.*;
 

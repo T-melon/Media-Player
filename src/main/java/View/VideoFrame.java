@@ -1,9 +1,9 @@
 package View;
 
-import Components.PlayerIconButton;
-import UI.SliderUI;
-import Util.ClickEvent;
-import Value.*;
+import component.PlayerIconButton;
+import ui.SliderUi;
+import util.ClickEvent;
+import value.*;
 import com.sun.jna.NativeLibrary;
 import uk.co.caprica.vlcj.component.EmbeddedMediaPlayerComponent;
 import uk.co.caprica.vlcj.runtime.RuntimeUtil;
@@ -48,7 +48,7 @@ public class VideoFrame extends JFrame {
 
         this.slider = new JSlider(0, 100, 0);
         this.slider.setBounds(5, 0, 695, 24);
-        this.slider.setUI(new SliderUI(slider));
+        this.slider.setUI(new SliderUi(slider));
         this.slider.setBackground(PlayerColor.Bottom);
         this.slider.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         panel.add(this.slider);

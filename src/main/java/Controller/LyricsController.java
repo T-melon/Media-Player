@@ -1,9 +1,9 @@
 package Controller;
 
-import Util.LRC;
-import Util.LRCHandler;
-import Value.MediaDirectory;
-import Value.MediaType;
+import util.Lyric;
+import util.LRCHandler;
+import value.MediaDirectory;
+import value.MediaType;
 import View.Bottom.BottomMenuLeft;
 import View.MainFrame;
 
@@ -11,7 +11,7 @@ import java.util.List;
 
 
 public class LyricsController {
-    private List<LRC> lyricsList;
+    private List<Lyric> lyricsList;
     private static LyricsController lyricsController = new LyricsController();
     private LyricsThread lyricsThread;
     private boolean isValid = false;
@@ -81,7 +81,7 @@ public class LyricsController {
             } else {
                 int num = lyricsList.size();
                 int i = 0;
-                while (i < num && lyricsList.get(i).getshowTime() <= this.start)
+                while (i < num && lyricsList.get(i).getShowTime() <= this.start)
                     i++;
                 String s1 = "", s2 = "", s3 = "", s4 = "", s5 = "";
                 if (i - 3 >= 0)
@@ -96,10 +96,10 @@ public class LyricsController {
                     s5 = lyricsList.get(i + 1).getContent();
                 MainFrame.getInstance().getLyricsPanel().setLyricsContent(s1, s2, s3, s4, s5);
                 for (; i < num; i++) {
-                    long sleepTime = lyricsList.get(i).getshowTime() - this.start;
+                    long sleepTime = lyricsList.get(i).getShowTime() - this.start;
                     try {
                         Thread.sleep(sleepTime);
-                        this.start = lyricsList.get(i).getshowTime();
+                        this.start = lyricsList.get(i).getShowTime();
                         s1 = s2;
                         s2 = s3;
                         s3 = s4;

@@ -1,13 +1,13 @@
 package View.Bottom;
 
-import Components.PlayerIconButton;
+import component.PlayerIconButton;
 import Controller.MusicController;
-import UI.SliderUI;
-import Util.ClickEvent;
-import Util.SystemUtils;
-import Util.TimeFormat;
-import Value.PlayerColor;
-import Value.PlayerIcon;
+import ui.SliderUi;
+import util.ClickEvent;
+import util.SystemUtils;
+import util.TimeFormat;
+import value.PlayerColor;
+import value.PlayerIcon;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -47,7 +47,7 @@ public class BottomMenuRight extends JPanel {
             }
         });
 
-        JButton last = new PlayerIconButton(PlayerIcon.last);
+        JButton last = new PlayerIconButton(PlayerIcon.LAST);
         last.setBounds(270, 10, 35, 35);
         add(last);
         last.addMouseListener(new ClickEvent() {
@@ -125,7 +125,7 @@ public class BottomMenuRight extends JPanel {
 
         voiceSlider = new JSlider(0, 100, 40);
         voiceSlider.setBounds(770, 60, 120, 24);
-        voiceSlider.setUI(new SliderUI(voiceSlider));
+        voiceSlider.setUI(new SliderUi(voiceSlider));
         voiceSlider.setBackground(PlayerColor.Bottom);
         voiceSlider.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         add(voiceSlider);
@@ -151,7 +151,7 @@ public class BottomMenuRight extends JPanel {
 
         playProcessSlider = new JSlider(0, 100, 0);
         playProcessSlider.setBounds(220, 60, 310, 24);
-        playProcessSlider.setUI(new SliderUI(playProcessSlider));
+        playProcessSlider.setUI(new SliderUi(playProcessSlider));
         playProcessSlider.setBackground(PlayerColor.Bottom);
         playProcessSlider.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         add(playProcessSlider);

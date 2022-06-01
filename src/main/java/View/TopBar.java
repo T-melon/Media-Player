@@ -1,7 +1,7 @@
 package View;
 
-import Value.PlayerColor;
-import Value.PlayerFont;
+import value.PlayerColor;
+import value.PlayerFont;
 
 import javax.swing.*;
 

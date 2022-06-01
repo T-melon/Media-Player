@@ -1,9 +1,9 @@
 package View.Aside;
 
-import Components.PlayerTextButton;
-import Util.ClickEvent;
-import Value.PlayerColor;
-import Value.PlayerFont;
+import component.PlayerTextButton;
+import util.ClickEvent;
+import value.PlayerColor;
+import value.PlayerFont;
 import View.MainFrame;
 
 import javax.swing.*;

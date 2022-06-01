@@ -1,8 +1,8 @@
 package Controller;
 
-import Util.FileList;
-import Value.MediaDirectory;
-import Value.MediaType;
+import util.FileList;
+import value.MediaDirectory;
+import value.MediaType;
 import View.Bottom.BottomMenuLeft;
 import View.Bottom.BottomMenuRight;
 import View.MainFrame;
